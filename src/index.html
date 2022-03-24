@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Auth Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+    integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    (async () => {
+      const API_BASE_URL = 'https://codesandbox.stream/api/v1';
+      try {
+        const res = await axios.get('users/current', {
+          baseURL: API_BASE_URL,
+          withCredentials: true,
+        });
+        console.info(res.data);
+      } catch (err) {
+        console.error(err);
+      }
+    })();
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

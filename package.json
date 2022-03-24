@@ -1,0 +1,12 @@
+{
+  "name": "auth-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve -n src"
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
+  }
+}
